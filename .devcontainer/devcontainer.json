@@ -1,0 +1,20 @@
+{
+  "name": "Elixir Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "lexical.server.releasePathOverride": "/usr/local/bin/expert"
+      },
+      "extensions": [
+        "lexical-lsp.lexical",
+        "pantajoe.vscode-elixir-credo",
+        "phoenixframework.phoenix"
+      ]
+    }
+  },
+  "postCreateCommand": "if [ -f mix.exs ]; then mix deps.get; fi"
+}
