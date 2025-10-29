@@ -36,8 +36,10 @@ RUN wget https://github.com/elixir-lang/expert/releases/download/nightly/expert_
 # Set working directory
 WORKDIR /workspace
 
-# Install Phoenix (optional, uncomment if needed)
+# Install Phoenix 
 RUN mix archive.install hex phx_new --force
+# Install Credo
+RUN mix archive.install hex credo --force
 
 # Create mix cache directories
 RUN mkdir -p ${MIX_HOME} ${HEX_HOME}
