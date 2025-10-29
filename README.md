@@ -11,7 +11,7 @@ Get a consistent, pre-configured environment with zero local setup — just open
 • Elixir **1.19.1** + Erlang **28.1** (built from `erlang:28.1-alpine`)
 
 ✅ **PostgreSQL Database**  
-• `postgres:18-alpine` service included — production-oriented + Ecto ready
+• `postgres:18-alpine` service included.
 
 ✅ **Expert LSP Support**  
 • Uses the nightly **Expert** LSP via Lexical Extension (`lexical-lsp.lexical`)
