@@ -38,8 +38,10 @@ WORKDIR /workspace
 
 # Install Phoenix 
 RUN mix archive.install hex phx_new --force
-# Install Credo
+# Install Credo and its required dependencies
 RUN mix archive.install hex credo --force
+RUN mix archive.install hex bunt --force
+RUN mix archive.install hex jason --force
 
 # Create mix cache directories
 RUN mkdir -p ${MIX_HOME} ${HEX_HOME}
