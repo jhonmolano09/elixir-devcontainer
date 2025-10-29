@@ -14,7 +14,7 @@ Get a consistent, pre-configured environment with zero local setup — just open
 • `postgres:18-alpine` service included — production-oriented + Ecto ready
 
 ✅ **Expert LSP Support**  
-• Uses the nightly **Lexical** LSP (`lexical-lsp.lexical`) for best-in-class code intelligence
+• Uses the nightly **Expert** LSP via Lexical Extension (`lexical-lsp.lexical`)
 
 ✅ **VS Code Extensions Pre-Installed**
 - Lexical LSP (`lexical-lsp.lexical`)
